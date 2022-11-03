@@ -12,6 +12,7 @@ using UnityEditor;
 public class MenuUIHandler : MonoBehaviour
 {
     public ColorPicker ColorPicker;
+    public Animator transition;
 
     public void NewColorSelected(Color color)
     {
@@ -24,11 +25,7 @@ public class MenuUIHandler : MonoBehaviour
         //this will call the NewColorSelected function when the color picker have a color button clicked.
         ColorPicker.onColorChanged += NewColorSelected;
     }
-    public void StartNew()
-    {
-        SceneManager.LoadScene(1);
-    }
-
+    
     public void Exit()
     {
 #if UNITY_EDITOR
