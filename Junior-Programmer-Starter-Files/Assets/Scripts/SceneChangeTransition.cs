@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class SceneChangeTransition : MonoBehaviour
 {
     public Animator transition;
+    public int sceneIndex;
     public void StartNew()
     {
-        StartCoroutine(LoadLevel(1));
+        StartCoroutine(LoadLevel(sceneIndex));
     }
 
     IEnumerator LoadLevel(int levelIndex)
