@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainManager : MonoBehaviour
 {
-
+    // Allow Main Manager to be refered from another scripts
     public static MainManager Instance;
 
     private void Awake()
