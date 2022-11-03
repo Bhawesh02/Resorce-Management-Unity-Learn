@@ -12,7 +12,6 @@ using UnityEditor;
 public class MenuUIHandler : MonoBehaviour
 {
     public ColorPicker ColorPicker;
-    public Animator transition;
 
     public void NewColorSelected(Color color)
     {
