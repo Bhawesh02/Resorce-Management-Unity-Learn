@@ -6,6 +6,9 @@ public class MainManager : MonoBehaviour
 {
     // Allow Main Manager to be refered from another scripts
     public static MainManager Instance;
+    public Color teamColor;
+
+
 
     private void Awake()
     {
