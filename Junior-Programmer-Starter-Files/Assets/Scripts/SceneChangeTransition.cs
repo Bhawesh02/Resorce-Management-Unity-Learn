@@ -20,6 +20,7 @@ public class SceneChangeTransition : MonoBehaviour
 
         //wait for animation to get over
         yield return new WaitForSeconds(1);
+
         //Load newScene
         SceneManager.LoadScene(levelIndex);
 
